@@ -23,7 +23,7 @@ def search():
         sources = [doc.metadata.get("source") for doc in docs if doc.metadata.get("source")]
         unique_sources = list(set(sources))
         
-        output = "These are the top resumes that meet your needs: " + ", ".join(unique_sources)
+        output = "These are resumes of the top candidates that meet your needs: " + ", ".join(unique_sources)
 
         # Log the unique sources for debugging
         current_app.logger.info(output)
